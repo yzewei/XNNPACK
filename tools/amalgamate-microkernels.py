@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # Copyright 2019 Google LLC
 #
 # This source code is licensed under the BSD-style license found in the
