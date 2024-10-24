@@ -84,6 +84,9 @@ static void init_f32_gavgpool_cw_config(void) {
   #elif XNN_ARCH_RISCV
     f32_gavgpool_cw_config.ukernel = (xnn_gavgpool_cw_ukernel_fn) xnn_f32_gavgpool_cw_ukernel__scalar_x1;
     f32_gavgpool_cw_config.channel_tile = 1;
+  #elif XNN_ARCH_LOONGARCH
+    f32_gavgpool_cw_config.ukernel = (xnn_gavgpool_cw_ukernel_fn) xnn_f32_gavgpool_cw_ukernel__scalar_x1;
+    f32_gavgpool_cw_config.channel_tile = 1;
   #endif
 }
 
